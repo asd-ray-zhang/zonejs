@@ -1,0 +1,22 @@
+{
+  "name": "zone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server  -c configs/bs-config.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "zone.js": "^0.8.13",
+    "rxjs": "^5.1.0"
+  }
+}

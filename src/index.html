@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Es6</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  
+</body>
+    <script type="text/javascript" src="./dist/zone.js"></script>
+    <script type="text/javascript" src="./dist/Rx.js"></script>
+    <script type="text/javascript" src="./test/zone.js"></script>
+    <script>
+
+      const streamA$ = Rx.Observable.of(2);
+      const streamB$ = Rx.Observable.of(4);
+      const streamC$ = Rx.Observable.concat(streamA$, streamB$)
+        .reduce((x, y) => x  + y);
+
+      streamC$.subscribe(console.log); //prints 6
+    </script>
+</html>
